@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 const HomePage = () => {
   return (
@@ -15,10 +16,10 @@ const HomePage = () => {
       </div>
       <div className="flex flex-1 basis-full justify-center items-center">
         <div className="relative">
-          <a href="#" className="relative z-[1] peer font-Bellefair leading[36.7%] text-xl text-black">
+          <NavLink to="/destination" href="#" className="relative z-[1] peer font-Bellefair leading[36.7%] text-xl text-black">
             <span className="relative z-[3]">EXPLORE</span>
             <div className="z-[2] w-36 h-36 peer rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white"></div>
-          </a>
+          </NavLink>
           <div className="transition-all ease-in-out z-0 w-80 h-80 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 bg-white peer-hover:opacity-25 duration-300"></div>
         </div>
       </div>
