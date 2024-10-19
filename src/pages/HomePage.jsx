@@ -14,10 +14,13 @@ const HomePage = () => {
         </p>
       </div>
       <div className="flex flex-1 basis-full justify-center items-center">
-        <div className="    ">
-          <a href="#" className="font-Bellefair leading[36.7%] text-2xl text-black px-[30px] py-16 bg-white rounded-full hover:px-28 hover:py-36 hover:bg-white hover:rounded-full hover:opacity-50">EXPLORE</a>
+        <div className="relative">
+          <a href="#" className="relative z-[1] peer font-Bellefair leading[36.7%] text-xl text-black">
+            <span className="relative z-[3]">EXPLORE</span>
+            <div className="z-[2] w-36 h-36 peer rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white"></div>
+          </a>
+          <div className="transition-all ease-in-out z-0 w-80 h-80 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 bg-white peer-hover:opacity-25 duration-300"></div>
         </div>
-        
       </div>
     </div>
     </>
