@@ -16,7 +16,7 @@ const HomePage = () => {
       </div>
       <div className="flex flex-1 basis-full justify-center items-center md:mt-32 lg:mt-0 lg:flex-auto lg:items-end lg:-translate-y-1/4">
         <div className="relative">
-          <NavLink to="/destination" href="#" className="relative z-[1] peer font-Bellefair leading[36.7%] text-xl text-black">
+          <NavLink to="/spacetourism/destination" href="#" className="relative z-[1] peer font-Bellefair leading[36.7%] text-xl text-black">
             <span className="relative z-[3]">EXPLORE</span>
             <div className="z-[2] w-36 h-36 peer rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white md:w-60 md:h-60"></div>
           </NavLink>
