@@ -26,19 +26,19 @@ const Navbar = () => {
     let menuHighlighterDivs = document.getElementById("menu-ul").getElementsByTagName("div");
     let menuMdHighlighterDivs = document.getElementById("menu-md-ul").getElementsByTagName("div");
     switch(pathname){
-      case "/":
+      case "/spacetourism":
         menuHighlighterDivs[0].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         menuMdHighlighterDivs[0].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         break;
-      case "/destination":
+      case "/spacetourism/destination":
         menuHighlighterDivs[1].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         menuMdHighlighterDivs[1].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         break;
-      case "/crew":
+      case "/spacetourism/crew":
         menuHighlighterDivs[2].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         menuMdHighlighterDivs[2].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         break;
-      case "/technology":
+      case "/spacetourism/technology":
         menuHighlighterDivs[3].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         menuMdHighlighterDivs[3].classList.remove("opacity-0", "opacity-50", "peer-hover:visible", "invisible", "transition-all", "ease-in-out", "duration-500", "peer-hover:opacity-50");
         break;
@@ -64,28 +64,28 @@ const Navbar = () => {
         <div className="hidden bg-spaceMoreTransparentWhite md:p-6 md:pl-0 md:flex md:items-center md:flex-grow md:justify-end">
           <ul id="menu-md-ul" className="hidden md:flex gap-8 text-white">
             <li class="relative">
-              <NavLink to="/" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
+              <NavLink to="/spacetourism" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">00</span>
                 HOME
               </NavLink>
               <div class="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
             </li>
             <li class="relative">
-              <NavLink to="/destination" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
+              <NavLink to="/spacetourism/destination" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">01</span>
                 DESTINATION
               </NavLink>
               <div class="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
             </li>
             <li class="relative">
-              <NavLink to="/crew" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
+              <NavLink to="/spacetourism/crew" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">02</span>
                 CREW
               </NavLink>
               <div class="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
             </li>
             <li class="relative">
-              <NavLink to="/technology" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
+              <NavLink to="/spacetourism/technology" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">03</span>
                 TECHNOLOGY
               </NavLink>
@@ -102,22 +102,22 @@ const Navbar = () => {
               <ul id="menu-ul" className="flex flex-col gap-8 text-white">
                 <li className="relative">
                   <span className="text-white text-xl pr-4 tracking-wider">00</span>
-                  <NavLink to="/" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">HOME</NavLink>
+                  <NavLink to="/spacetourism" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">HOME</NavLink>
                   <div className="transition-all ease-in-out duration-500 absolute h-full -right-8 top-0 border-white opacity-0 border-r-4 peer-hover:opacity-50"></div>
                 </li>
                 <li className="relative">
                   <span className="text-white text-xl pr-4 tracking-wider">01</span>
-                  <NavLink to="/destination" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">DESTINATION</NavLink>
+                  <NavLink to="/spacetourism/destination" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">DESTINATION</NavLink>
                   <div className="transition-all ease-in-out duration-500 absolute h-full -right-8 top-0 border-white opacity-0 border-r-4 peer-hover:opacity-50"></div>
                 </li>
                 <li className="relative">
                   <span className="text-white text-xl pr-4 tracking-wider">02</span>
-                  <NavLink to="/crew" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">CREW</NavLink>
+                  <NavLink to="/spacetourism/crew" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">CREW</NavLink>
                   <div className="transition-all ease-in-out duration-500 absolute h-full -right-8 top-0 border-white opacity-0 border-r-4 peer-hover:opacity-50"></div>
                 </li>
                 <li className="relative">
                   <span className="text-white text-xl pr-4 tracking-wider">03</span>
-                  <NavLink to="/technology" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">TECHNOLOGY</NavLink>
+                  <NavLink to="/spacetourism/technology" href="#" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer">TECHNOLOGY</NavLink>
                   <div className="transition-all ease-in-out duration-500 absolute h-full -right-8 top-0 border-white opacity-0 border-r-4 peer-hover:opacity-50"></div>
                 </li>
               </ul>
