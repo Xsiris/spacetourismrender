@@ -3,10 +3,14 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      flexGrow: {
+        5: '5'
+      },
       colors:{
         "spaceBlue-900" : "#0B0D17",
         "spaceBlue-300" : "#D0D6F9",
-        "spaceTransparentWhite" : "rgba(255, 255, 255, 0.25)"
+        "spaceTransparentWhite" : "rgba(255, 255, 255, 0.25)",
+        "spaceMoreTransparentWhite" : "rgba(255, 255, 255, 0.05)"
       },
       backgroundImage:{
         'home-mobile' : "url('/src/assets/home/background-home-mobile.jpg')",

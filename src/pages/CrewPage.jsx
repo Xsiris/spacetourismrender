@@ -60,11 +60,11 @@ const CrewPage = () => {
         }
     }
   return (
-    <div className="p-6">
+    <div className="p-6 md:p-10">
       <div className="mb-6">
-        <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest"><span className="opacity-25 pr-4 font-semibold">02</span>MEET YOUR CREW</h1>
+        <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest md:text-left"><span className="opacity-25 pr-4 font-semibold">02</span>MEET YOUR CREW</h1>
       </div>
-      <div id="crew-text" className="relative my-10 text-center text-white flex flex-col items-center justify-center">
+      <div id="crew-text" className="relative my-10 text-center text-white flex flex-col items-center justify-center md:px-10">
         <h2 className="transition-all ease-in-out duration-500 font-Bellefair top-0 text-2xl mb-2 opacity-50">COMMANDER</h2>
         <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">MISSION SPECIALIST</h2>
         <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">PILOT</h2>
@@ -105,11 +105,11 @@ const CrewPage = () => {
             <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white opacity-25 -translate-x-1/2"></a></li>
         </ul>
       </div>
-      <div id="crew-image" className="relative px-6">
-        <img className="transition-all ease-in-out duration-500 bottom-0 object-scale-down from-transparent w-full h-full left-0" src={ commander } />
-        <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0" src={ specialist } />
-        <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0" src={ pilot } />
-        <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0" src={ engineer } />
+      <div id="crew-image" className="relative px-6 md:flex md:justify-center">
+        <img className="transition-all ease-in-out duration-500 bottom-0 object-scale-down from-transparent w-full h-full left-0 md:w-[440px] " src={ commander } />
+        <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0  md:w-[440px] md:h-[560px]" src={ specialist } />
+        <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0  md:w-[440px] md:h-[560px]" src={ pilot } />
+        <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0  md:w-[440px] md:h-[560px]" src={ engineer } />
       </div>
       <div className="absolute left-0 bottom-0 w-full h-60 bg-transparent bg-gradient-to-t from-black"></div>
     </div>

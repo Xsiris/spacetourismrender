@@ -96,13 +96,22 @@ const TechnologyPage = () => {
     }
   return (
     <div>
-      <div className="mb-6">
-        <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest"><span className="opacity-25 pr-4 font-semibold">03</span>SPACE LAUNCH 101</h1>
+      <div className="mb-6 pt-6 px-6 md:pt-10 md:px-10">
+        <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest md:text-left"><span className="opacity-25 pr-4 font-semibold">03</span>SPACE LAUNCH 101</h1>
       </div>
       <div id="technology-image" className="relative pt-10">
-        <img className="transition-all ease-in-out duration-500 w-full h-[322px] opacity-100 top-10" src={vehiclePortrait} />
-        <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10" src={spaceportPortrait} />
-        <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10" src={capsulePortrait} />
+        <picture>
+          <source media="(min-width:600px)" srcset={vehicleLandscape} />
+          <img className="transition-all ease-in-out duration-500 w-full h-[322px] opacity-100 top-10" src={vehiclePortrait} />
+        </picture>
+        <picture>
+          <source media="(min-width:600px)" srcset={spaceportLandscape} />
+          <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10" src={spaceportPortrait} />
+        </picture>
+        <picture>
+          <source media="(min-width:600px)" srcset={capsuleLandscape} />
+          <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10" src={capsulePortrait} />
+        </picture>
       </div>
       <div className="pt-8 pb-10">
         <ul id="technology-slides" className="flex text-center items-center justify-center gap-16 text-white">
@@ -124,7 +133,7 @@ const TechnologyPage = () => {
         </ul>
         <div className="h-12"></div>
       </div>
-      <div id="technology-text" className="px-6 pb-6 flex flex-col text-center text-white">
+      <div id="technology-text" className="px-6 pb-6 flex flex-col text-center text-white md:px-10">
         <h2 className="font-Bellefair text-2xl mb-2 opacity-50">THE TERMINOLOGY...</h2>
         <div className="relative text-center">
           <h1 className="transition-all ease-in-out duration-500 font-Bellefair opacity-100 text-3xl top-0">LAUNCH VEHICLE</h1>

@@ -4,8 +4,8 @@ import {NavLink} from 'react-router-dom'
 const HomePage = () => {
   return (
     <>
-    <div className="flex flex-col text-center text-white p-6 h-full">
-      <div className="flex-1 flex-col">
+    <div className="flex flex-col text-center text-white p-6 h-full md:py-32 md:px-10 lg:flex-row">
+      <div className="flex-1 flex-col md:px-10 lg:items-center lg:justify-center">
         <h2 className="font-Barlow text-xl tracking-wider leading-[33.6%] text-spaceBlue-300">SO, YOU WANT TO TRAVEL TO</h2>
         <h1 className="font-Bellefair text-8xl leading-[171.9%]">SPACE</h1>
         <p className="font-Barlow text-lg leading-[180%] tracking-normal text-spaceBlue-300 ">

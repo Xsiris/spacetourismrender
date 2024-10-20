@@ -202,15 +202,15 @@ const DestinationPage = () => {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-6 md:p-10">
       <div className="mb-6">
-        <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest"><span className="opacity-25 pr-4 font-semibold">01</span>PICK YOUR DESTINATION</h1>
+        <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest md:text-left"><span className="opacity-25 pr-4 font-semibold">01</span>PICK YOUR DESTINATION</h1>
       </div>
       <div id="veiw-planet-images" className="flex items-center justify-center py-6 mb-8">
-        <img id="moon" className="transition-all ease-in-out duration-500 opacity-100 object-scale-down w-36 h-36" src={ moon } />
-        <img id="mars" className="transition-all ease-in-out duration-500 absolute opacity-0 object-scale-down w-36 h-36" src={ mars } />
-        <img id="europa" className="transition-all ease-in-out duration-500 absolute opacity-0 object-scale-down w-36 h-36" src={ europa } />
-        <img id="titan" className="transition-all ease-in-out duration-500 absolute opacity-0 object-scale-down w-36 h-36" src={ titan } />
+        <img id="moon" className="transition-all ease-in-out duration-500 opacity-100 object-scale-down w-36 h-36 md:w-72 md:h-72" src={ moon } />
+        <img id="mars" className="transition-all ease-in-out duration-500 absolute opacity-0 object-scale-down w-36 h-36 md:w-72 md:h-72" src={ mars } />
+        <img id="europa" className="transition-all ease-in-out duration-500 absolute opacity-0 object-scale-down w-36 h-36 md:w-72 md:h-72" src={ europa } />
+        <img id="titan" className="transition-all ease-in-out duration-500 absolute opacity-0 object-scale-down w-36 h-36 md:w-72 md:h-72" src={ titan } />
       </div>
       <div className="mb-6 pb-2">
         <ul className="text-spaceBlue-300 text-base tracking-wider font-Barlow flex gap-7 items-center justify-center">
@@ -226,7 +226,7 @@ const DestinationPage = () => {
         <h1 id="europa-header" className="transition-all ease-in-out duration-500 absolute opacity-0  text-white font-Bellefair text-6xl leading-[114.6%]">EUROPA</h1>
         <h1 id="titan-header" className="transition-all ease-in-out duration-500 absolute opacity-0  text-white font-Bellefair text-6xl leading-[114.6%]">TITAN</h1>
       </div>
-      <div className="relative">
+      <div className="relative md:px-10">
         <p id="moon-description" className="transition-all ease-in-out duration-500 opacity-100 text-spaceBlue-300 font-light text-center font-Barlow text-lg leading-[180%]">
           See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
           regain perspective and come back refreshed. While you’re there, take in some history 
@@ -249,11 +249,11 @@ const DestinationPage = () => {
           bonus, you get striking views of the Rings of Saturn.
         </p>
       </div>
-      <div className="my-6">
+      <div className="my-6 md:px-10">
         <hr className="border-spaceTransparentWhite" />
       </div>
-      <div className="flex flex-col items-center justify-center">
-        <div className="text-center mb-6">
+      <div className="flex flex-col items-center justify-center md:px-10 md:flex-row md:gap-x-40">
+        <div className="text-center mb-6 md:mb-0">
           <h2 className="mb-3 text-base font-Barlow text-spaceBlue-300 tracking-wider">AVG. DISTANCE</h2>
           <span id="moon-distance" className="transition-all ease-in-out duration-500 left-1/2 -translate-x-1/2 text-white opacity-100 text-2xl font-Bellefair font-light">384,400 KM</span>
           <span id="mars-distance" className="transition-all ease-in-out duration-500 absolute left-1/2 -translate-x-1/2 opacity-0 text-white text-2xl font-Bellefair font-light">225 MIL. KM</span>
