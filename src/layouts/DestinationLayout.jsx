@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 
 const DestinationLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen  bg-scroll bg-destination-mobile bg-cover md:bg-destination-tablet">
+    <div className="flex flex-col min-h-screen bg-scroll bg-destination-mobile bg-cover md:bg-destination-tablet lg:bg-destination-desktop">
       <Navbar />
       <Outlet />
     </div>

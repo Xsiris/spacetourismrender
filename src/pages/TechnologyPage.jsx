@@ -95,70 +95,78 @@ const TechnologyPage = () => {
         }
     }
   return (
-    <div>
-      <div className="mb-6 pt-6 px-6 md:pt-10 md:px-10">
+    <div className="lg:flex lg:flex-1 lg:relative lg:p-10 lg:pr-0 lg:pl-32">
+      <div className="mb-6 p-6 md:p-10 lg:absolute lg:p-0">
         <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest md:text-left"><span className="opacity-25 pr-4 font-semibold">03</span>SPACE LAUNCH 101</h1>
       </div>
-      <div id="technology-image" className="relative pt-10">
-        <picture>
-          <source media="(min-width:600px)" srcset={vehicleLandscape} />
-          <img className="transition-all ease-in-out duration-500 w-full h-[322px] opacity-100 top-10" src={vehiclePortrait} />
-        </picture>
-        <picture>
-          <source media="(min-width:600px)" srcset={spaceportLandscape} />
-          <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10" src={spaceportPortrait} />
-        </picture>
-        <picture>
-          <source media="(min-width:600px)" srcset={capsuleLandscape} />
-          <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10" src={capsulePortrait} />
-        </picture>
-      </div>
-      <div className="pt-8 pb-10">
-        <ul id="technology-slides" className="flex text-center items-center justify-center gap-16 text-white">
-            <li className="relative flex items-center justify-center group"><a href="#" onClick={(e) => (changeTechnologySlide(e))}>
-                <div className=" transition-all ease-in-out duration-300 absolute text-black z-10 left-0 top-0 -translate-x-1/2 translate-y-1/2">1</div>
-                <div className="transition-all ease-in-out duration-300 absolute left-0 top-0 -translate-x-1/2 bg-white rounded-full w-12 h-12 hover:opacity-100 group-hover:opacity-100"></div>
-                </a>
-            </li>
-            <li className="relative flex items-center justify-center group"><a href="#" onClick={(e) => (changeTechnologySlide(e))}>
-                <div className="transition-all ease-in-out duration-300 absolute text-white z-10 left-0 top-0 -translate-x-1/2 translate-y-1/2">2</div>
-                <div className="transition-all ease-in-out duration-300 absolute left-0 top-0 -translate-x-1/2 outline outline-white opacity-25 rounded-full w-12 h-12 hover:opacity-100 group-hover:opacity-100"></div>
-                </a>
-            </li>
-            <li className="relative flex items-center justify-center group"><a href="#" onClick={(e) => (changeTechnologySlide(e))}>
-                <div className="transition-all ease-in-out duration-300 absolute text-white z-10 left-0 top-0 -translate-x-1/2 translate-y-1/2">3</div>
-                <div className="transition-all ease-in-out duration-300 absolute left-0 top-0 -translate-x-1/2 outline outline-white opacity-25 rounded-full w-12 h-12 hover:opacity-100 group-hover:opacity-100"></div>
-                </a>
-            </li>
-        </ul>
-        <div className="h-12"></div>
-      </div>
-      <div id="technology-text" className="px-6 pb-6 flex flex-col text-center text-white md:px-10">
-        <h2 className="font-Bellefair text-2xl mb-2 opacity-50">THE TERMINOLOGY...</h2>
-        <div className="relative text-center">
-          <h1 className="transition-all ease-in-out duration-500 font-Bellefair opacity-100 text-3xl top-0">LAUNCH VEHICLE</h1>
-          <h1 className="transition-all ease-in-out duration-500 absolute opacity-0 font-Bellefair text-3xl top-0">SPACEPORT</h1>
-          <h1 className="transition-all ease-in-out duration-500 absolute opacity-0 font-Bellefair text-3xl top-0">SPACE CAPSULE</h1>
+
+      <div className="lg:flex lg:flex-row-reverse lg:items-center">
+        <div id="technology-image" className="relative pt-10 lg:p-0 lg:flex-1 xl:flex xl:justify-end">
+          <picture>
+            <source media="(min-width:600px)" srcset={vehicleLandscape} />
+            <source media="(min-width:1024px)" srcset={vehiclePortrait} />
+            <img className="transition-all ease-in-out duration-500 w-full h-[322px] opacity-100 top-10 xl:w-[600px] xl:h-[600px]" src={vehiclePortrait} />
+          </picture>
+          <picture>
+            <source media="(min-width:600px)" srcset={spaceportLandscape} />
+            <source media="(min-width:1024px)" srcset={spaceportPortrait} />
+            <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10 xl:w-[600px] xl:h-[600px]" src={spaceportPortrait} />
+          </picture>
+          <picture>
+            <source media="(min-width:600px)" srcset={capsuleLandscape} />
+            <source media="(min-width:1024px)" srcset={capsulePortrait} />
+            <img className="transition-all ease-in-out duration-500 absolute opacity-0 w-full h-[322px] top-10 xl:w-[600px] xl:h-[600px]" src={capsulePortrait} />
+          </picture>
         </div>
-        <div className="relative">
-          <p className="transition-all ease-in-out duration-500 pt-6 text-base opacity-100 text-spaceBlue-300 font-light bottom-0 left-0">
-              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-              payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-              WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-              it's quite an awe-inspiring sight on the launch pad!
-          </p>
-          <p className="transition-all ease-in-out duration-500 absolute opacity-0 pt-6 text-base text-spaceBlue-300 font-light bottom-0 left-0">
-              A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-              by analogy to the seaport for ships or airport for aircraft. Based in the 
-              famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-              of the Earth’s rotation for launch.
-          </p>
-          <p className="transition-all ease-in-out duration-500 absolute opacity-0 pt-6 text-base text-spaceBlue-300 font-light bottom-0 left-0">
-              A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-              capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-              you'll spend your time during the flight. It includes a space gym, cinema, 
-              and plenty of other activities to keep you entertained.
-          </p>
+        <div className="lg:flex lg:flex-1">
+          <div className="pt-8 pb-10 lg:flex lg:flex-1 lg:items-center lg:justify-center lg:basis-full">
+              <ul id="technology-slides" className="flex text-center items-center justify-center gap-16 text-white lg:flex lg:flex-col">
+                  <li className="relative flex items-center justify-center group"><a href="#" onClick={(e) => (changeTechnologySlide(e))}>
+                      <div className=" transition-all ease-in-out duration-300 absolute text-black z-10 left-0 top-0 -translate-x-1/2 translate-y-1/2">1</div>
+                      <div className="transition-all ease-in-out duration-300 absolute left-0 top-0 -translate-x-1/2 bg-white rounded-full w-12 h-12 hover:opacity-100 group-hover:opacity-100"></div>
+                      </a>
+                  </li>
+                  <li className="relative flex items-center justify-center group"><a href="#" onClick={(e) => (changeTechnologySlide(e))}>
+                      <div className="transition-all ease-in-out duration-300 absolute text-white z-10 left-0 top-0 -translate-x-1/2 translate-y-1/2">2</div>
+                      <div className="transition-all ease-in-out duration-300 absolute left-0 top-0 -translate-x-1/2 outline outline-white opacity-25 rounded-full w-12 h-12 hover:opacity-100 group-hover:opacity-100"></div>
+                      </a>
+                  </li>
+                  <li className="relative flex items-center justify-center group"><a href="#" onClick={(e) => (changeTechnologySlide(e))}>
+                      <div className="transition-all ease-in-out duration-300 absolute text-white z-10 left-0 top-0 -translate-x-1/2 translate-y-1/2">3</div>
+                      <div className="transition-all ease-in-out duration-300 absolute left-0 top-0 -translate-x-1/2 outline outline-white opacity-25 rounded-full w-12 h-12 hover:opacity-100 group-hover:opacity-100"></div>
+                      </a>
+                  </li>
+              </ul>
+              <div className="h-12"></div>
+            </div>
+          <div id="technology-text" className="px-6 pb-6 flex flex-col text-center text-white md:px-10 lg:flex lg:flex-4 lg:items-center lg:justify-center lg:pb-0">
+            <h2 className="font-Bellefair text-2xl mb-2 opacity-50">THE TERMINOLOGY...</h2>
+            <div className="relative text-center">
+              <h1 className="transition-all ease-in-out duration-500 font-Bellefair opacity-100 text-3xl top-0">LAUNCH VEHICLE</h1>
+              <h1 className="transition-all ease-in-out duration-500 absolute opacity-0 font-Bellefair text-3xl top-0">SPACEPORT</h1>
+              <h1 className="transition-all ease-in-out duration-500 absolute opacity-0 font-Bellefair text-3xl top-0">SPACE CAPSULE</h1>
+            </div>
+            <div className="relative">
+              <p className="transition-all ease-in-out duration-500 pt-6 text-base opacity-100 text-spaceBlue-300 font-light bottom-0 left-0">
+                  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                  it's quite an awe-inspiring sight on the launch pad!
+              </p>
+              <p className="transition-all ease-in-out duration-500 absolute opacity-0 pt-6 text-base text-spaceBlue-300 font-light bottom-0 left-0">
+                  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                  by analogy to the seaport for ships or airport for aircraft. Based in the 
+                  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                  of the Earth’s rotation for launch.
+              </p>
+              <p className="transition-all ease-in-out duration-500 absolute opacity-0 pt-6 text-base text-spaceBlue-300 font-light bottom-0 left-0">
+                  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+                  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+                  you'll spend your time during the flight. It includes a space gym, cinema, 
+                  and plenty of other activities to keep you entertained.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

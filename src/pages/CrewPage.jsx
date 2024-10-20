@@ -60,58 +60,64 @@ const CrewPage = () => {
         }
     }
   return (
-    <div className="p-6 md:p-10">
-      <div className="mb-6">
+    <div className="relative p-6 md:p-10 lg:p-32 xl:flex xl:flex-1">
+      <div className="mb-6 lg:absolute lg:top-10">
         <h1 className="text-center text-xl font-Barlow font-light text-white tracking-widest md:text-left"><span className="opacity-25 pr-4 font-semibold">02</span>MEET YOUR CREW</h1>
       </div>
-      <div id="crew-text" className="relative my-10 text-center text-white flex flex-col items-center justify-center md:px-10">
-        <h2 className="transition-all ease-in-out duration-500 font-Bellefair top-0 text-2xl mb-2 opacity-50">COMMANDER</h2>
-        <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">MISSION SPECIALIST</h2>
-        <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">PILOT</h2>
-        <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">FLIGHT ENGINEER</h2>
-        <div className="relative">
-          <h1 className="transition-all ease-in-out duration-500 opacity-100 top-0 font-Bellefair text-3xl">DOUGLAS HURLEY</h1>
-          <h1 className="transition-all ease-in-out duration-500 opacity-0 absolute top-0 font-Bellefair text-3xl">MARK SHUTTLEWORTH</h1>
-          <h1 className="transition-all ease-in-out duration-500 opacity-0 absolute top-0 font-Bellefair text-3xl">VICTOR GLOVER</h1>
-          <h1 className="transition-all ease-in-out duration-500 opacity-0 absolute top-0 font-Bellefair text-3xl">ANOUSHEH ANSARI</h1>
+
+      <div className="xl:flex xl:flex-col xl:items-center xl:justify-center xl:flex-1">
+        <div id="crew-text" className="relative my-10 text-center text-white flex flex-col items-center justify-center md:px-28 lg:px-32">
+          <h2 className="transition-all ease-in-out duration-500 font-Bellefair top-0 text-2xl mb-2 opacity-50">COMMANDER</h2>
+          <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">MISSION SPECIALIST</h2>
+          <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">PILOT</h2>
+          <h2 className="transition-all ease-in-out duration-500 absolute top-0 font-Bellefair text-2xl mb-2 opacity-0">FLIGHT ENGINEER</h2>
+          <div className="relative">
+            <h1 className="transition-all ease-in-out duration-500 opacity-100 top-0 font-Bellefair text-3xl">DOUGLAS HURLEY</h1>
+            <h1 className="transition-all ease-in-out duration-500 opacity-0 absolute top-0 font-Bellefair text-3xl">MARK SHUTTLEWORTH</h1>
+            <h1 className="transition-all ease-in-out duration-500 opacity-0 absolute top-0 font-Bellefair text-3xl">VICTOR GLOVER</h1>
+            <h1 className="transition-all ease-in-out duration-500 opacity-0 absolute top-0 font-Bellefair text-3xl">ANOUSHEH ANSARI</h1>
+          </div>
+          <p className="transition-all ease-in-out duration-500 opacity-100 bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+              and former NASA astronaut. He launched into space for the third time as 
+              commander of Crew Dragon Demo-2.
+          </p>
+          <p className="transition-all ease-in-out duration-500 opacity-0 absolute bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
+              Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+              the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+              African to travel to space as a space tourist.
+          </p>
+          <p className="transition-all ease-in-out duration-500 opacity-0 absolute bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
+              Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+              International Space Station. Glover is a commander in the U.S. Navy where 
+              he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+              station systems flight engineer. 
+          </p>
+          <p className="transition-all ease-in-out duration-500 opacity-0 absolute bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
+              Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+              Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+              fly to the ISS, and the first Iranian in space. 
+          </p>
         </div>
-        <p className="transition-all ease-in-out duration-500 opacity-100 bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
-            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-            and former NASA astronaut. He launched into space for the third time as 
-            commander of Crew Dragon Demo-2.
-        </p>
-        <p className="transition-all ease-in-out duration-500 opacity-0 absolute bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
-            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-            the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-            African to travel to space as a space tourist.
-        </p>
-        <p className="transition-all ease-in-out duration-500 opacity-0 absolute bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
-            Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-            International Space Station. Glover is a commander in the U.S. Navy where 
-            he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-            station systems flight engineer. 
-        </p>
-        <p className="transition-all ease-in-out duration-500 opacity-0 absolute bottom-0 pt-6 text-base text-spaceBlue-300 font-light">
-            Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-            Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-            fly to the ISS, and the first Iranian in space. 
-        </p>
+        <div className="mb-8 pb-3 text-white flex items-center justify-center z-10">
+          <ul className="mt-6 flex items-center justify-center gap-8">
+              <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white -translate-x-1/2"></a></li>
+              <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white opacity-25 -translate-x-1/2"></a></li>
+              <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white opacity-25 -translate-x-1/2"></a></li>
+              <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white opacity-25 -translate-x-1/2"></a></li>
+          </ul>
+        </div>
       </div>
-      <div className="mb-8 pb-3 text-white flex items-center justify-center">
-        <ul className="mt-6 flex items-center justify-center gap-8">
-            <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white -translate-x-1/2"></a></li>
-            <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white opacity-25 -translate-x-1/2"></a></li>
-            <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white opacity-25 -translate-x-1/2"></a></li>
-            <li className="relative"><a href="#" onClick={(e) => (changeCrewSlide(e))} className="absolute w-3 h-3 rounded-full bg-white opacity-25 -translate-x-1/2"></a></li>
-        </ul>
-      </div>
+      
       <div id="crew-image" className="relative px-6 md:flex md:justify-center">
         <img className="transition-all ease-in-out duration-500 bottom-0 object-scale-down from-transparent w-full h-full left-0 md:w-[440px] " src={ commander } />
         <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0  md:w-[440px] md:h-[560px]" src={ specialist } />
         <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0  md:w-[440px] md:h-[560px]" src={ pilot } />
         <img className="transition-all ease-in-out duration-500 opacity-0 invisible absolute bottom-0 object-scale-down from-transparent w-full h-full left-0  md:w-[440px] md:h-[560px]" src={ engineer } />
       </div>
-      <div className="absolute left-0 bottom-0 w-full h-60 bg-transparent bg-gradient-to-t from-black"></div>
+      <div className="absolute left-0 bottom-0 w-full h-60 bg-transparent bg-gradient-to-t from-black lg:h-1/2"></div>
+      <div className="absolute left-0 bottom-0 w-full h-60 bg-transparent bg-gradient-to-t from-black lg:h-1/2"></div>
+      <div className="absolute left-0 bottom-0 w-full h-60 bg-transparent bg-gradient-to-t from-black hidden lg:block lg:bottom-32"></div>
     </div>
   )
 }
