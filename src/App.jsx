@@ -14,17 +14,17 @@ function App() {
     createRoutesFromElements(
       <>
         <Route element={<MainLayout />}>
-          <Route path="/spacetourism" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path='*' element={<NotFoundPage />}/>
         </Route>
         <Route element={<DestinationLayout />}>
-          <Route path='/spacetourism/destination' element={<DestinationPage />} />
+          <Route path='/destination' element={<DestinationPage />} />
         </Route>
         <Route element={<CrewLayout />}>
-          <Route path='/spacetourism/crew' element={<CrewPage />} />
+          <Route path='/crew' element={<CrewPage />} />
         </Route>
         <Route element={<TechnologyLayout />}>
-          <Route path='/spacetourism/technology' element={<TechnologyPage />} />
+          <Route path='/technology' element={<TechnologyPage />} />
         </Route>
       </>
   ))
