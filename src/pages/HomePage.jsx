@@ -39,7 +39,7 @@ const HomePage = () => {
       <div className="flex flex-1 basis-full justify-center items-center md:mt-32 lg:mt-0 lg:items-end lg:flex-[0.5] lg:-translate-y-1/4">
         <div className="relative">
           <NavLink to="/destination" href="#" className="relative z-[1] peer font-Bellefair leading[36.7%] text-xl text-black">
-            <span className="relative z-[3]">EXPLORE</span>
+            <span className="relative z-[3] md:text-3xl">EXPLORE</span>
             <div className="z-[2] w-36 h-36 peer rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white md:w-60 md:h-60"></div>
           </NavLink>
           <div className="transition-all ease-in-out z-0 w-80 h-80 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 bg-white peer-hover:opacity-25 duration-300 md:w-96 md:h-96"></div>
