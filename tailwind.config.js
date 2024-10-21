@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       flexGrow: {
+        2: '2',
         5: '5'
       },
       colors:{

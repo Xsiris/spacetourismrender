@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between items-center md:items-stretch">
+      <nav className="flex justify-between items-center md:items-stretch xl:pt-10">
         <div className="relative p-6 md:flex-shrink md:px-10 lg:flex-grow-5">
           <hr className="border-spaceTransparentWhite absolute w-10/12 top-1/2 -right-10 hidden lg:block" />
           <div className="lg:flex">
@@ -61,7 +61,7 @@ const Navbar = () => {
             <img src={ iconHamburger } />
           </a>
         </div>
-        <div className="hidden bg-spaceMoreTransparentWhite md:p-6 md:pl-0 md:flex md:items-center md:flex-grow md:justify-end">
+        <div className="hidden bg-spaceMoreTransparentWhite md:p-6 md:pl-0 md:flex md:items-center md:flex-grow md:justify-end xl:flex-grow-2 xl:backdrop-blur-xl">
           <ul id="menu-md-ul" className="hidden md:flex gap-8 text-white">
             <li class="relative">
               <NavLink to="/spacetourism" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
