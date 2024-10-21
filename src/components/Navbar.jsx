@@ -49,7 +49,7 @@ const Navbar = () => {
     <div>
       <nav className="flex justify-between items-center md:items-stretch xl:pt-10">
         <div className="relative p-6 md:flex-shrink md:px-10 lg:flex-grow-5">
-          <hr className="border-spaceTransparentWhite absolute w-10/12 top-1/2 -right-10 hidden lg:block" />
+          <hr className="border-spaceTransparentWhite absolute z-10 w-10/12 top-1/2 -right-10 hidden lg:block" />
           <div className="lg:flex">
           <NavLink to="/spacetourism" href="#">
             <img src={ logo } />
