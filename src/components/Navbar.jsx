@@ -63,33 +63,33 @@ const Navbar = () => {
         </div>
         <div className="hidden bg-spaceMoreTransparentWhite md:p-6 md:pl-0 md:flex md:items-center md:flex-grow md:justify-end xl:flex-grow-2 xl:backdrop-blur-xl">
           <ul id="menu-md-ul" className="hidden md:flex gap-8 text-white">
-            <li class="relative">
+            <li className="relative">
               <NavLink to="/" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">00</span>
                 HOME
               </NavLink>
-              <div class="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
+              <div className="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
             </li>
-            <li class="relative">
+            <li className="relative">
               <NavLink to="/destination" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">01</span>
                 DESTINATION
               </NavLink>
-              <div class="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
+              <div className="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
             </li>
-            <li class="relative">
+            <li className="relative">
               <NavLink to="/crew" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">02</span>
                 CREW
               </NavLink>
-              <div class="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
+              <div className="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
             </li>
-            <li class="relative">
+            <li className="relative">
               <NavLink to="/technology" className="text-center text-xl font-Barlow font-light text-white tracking-widest peer md:font-thin md:text-lg">
                 <span className="text-white text-xl pr-4 tracking-wider md:text-lg md:font-light">03</span>
                 TECHNOLOGY
               </NavLink>
-              <div class="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
+              <div className="transition-all ease-in-out duration-500 absolute w-full right-0 -bottom-8 border-white opacity-0 border-b-4 peer-hover:opacity-50"></div>
             </li>
           </ul>
         </div>

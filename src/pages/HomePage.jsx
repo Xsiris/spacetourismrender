@@ -1,17 +1,39 @@
 import React from 'react'
+import {useState, useEffect} from 'react'
 import {NavLink} from 'react-router-dom'
 
 const HomePage = () => {
+  const [headerText, setHeaderText] = useState('');
+  const [title, setTitle] = useState('');
+  const [paragraphText, setParagraphText] = useState('');
+  // async await method
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await fetch("https://dev-spacetourism-decoupled.pantheonsite.io/jsonapi/node/home_page");
+        const data = await res.json();
+
+        // Assign state
+        setHeaderText(data.data[0].attributes.field_header_1);
+        setTitle(data.data[0].attributes.field_header_2);
+        setParagraphText(data.data[0].attributes.field_paragraph);
+
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, []);
+
+
   return (
     <>
     <div className="flex flex-col text-center text-white p-6 h-full md:py-32 lg:flex-row sm:px-32">
       <div className="flex-1 flex-col md:px-10 lg:justify-end lg:flex lg:items-start">
-        <h2 className="font-Barlow text-xl tracking-widest leading-[33.6%] text-spaceBlue-300 md:text-[28px] lg:text-left lg:w-full">SO, YOU WANT TO TRAVEL TO</h2>
-        <h1 className="font-Bellefair text-8xl leading-[171.9%] md:text-[144px] lg:text-left lg:w-full">SPACE</h1>
+        <h2 className="font-Barlow text-xl tracking-widest leading-[33.6%] text-spaceBlue-300 md:text-[28px] lg:text-left lg:w-full">{title}</h2>
+        <h1 className="font-Bellefair text-8xl leading-[171.9%] md:text-[144px] lg:text-left lg:w-full">{headerText}</h1>
         <p className="font-Barlow text-lg leading-[180%] tracking-normal text-spaceBlue-300 lg:text-left lg:w-3/4 xl:1/2">
-          Let’s face it; if you want to go to space, you might as well genuinely go to 
-          outer space and not hover kind of on the edge of it. Well sit back, and relax 
-          because we’ll give you a truly out of this world experience!
+          {paragraphText}
         </p>
       </div>
       <div className="flex flex-1 basis-full justify-center items-center md:mt-32 lg:mt-0 lg:items-end lg:flex-[0.5] lg:-translate-y-1/4">
